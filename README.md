@@ -18,7 +18,7 @@ All assignments will be sent to this mail:
 
 ## 🤝 Need support?
 
-Join our community on **Slack** where you can contact me or reach anyone can help you, we here to learn all together!
+Join our community on **Slack** where you can contact me or reach anyone can help you, we are here to learn all together!
 
 [Our slack workspace](https://join.slack.com/t/mongodbcourse/shared_invite/zt-id5p0zxd-EIRdpaUtCfmdr83J4d8k1g)
 
