@@ -21,3 +21,9 @@ All assignments will be sent to this mail:
 Join our community on **Slack** where you can contact me or reach anyone can help you, we here to learn all together!
 
 [Our slack workspace](https://join.slack.com/t/mongodbcourse/shared_invite/zt-id5p0zxd-EIRdpaUtCfmdr83J4d8k1g)
+
+## ✔️ Feedback is always appreciable
+
+>“Feedback is the breakfast of champions.” – Ken Blanchard
+
+[Please submit your feedback it helps a lot](https://forms.gle/ztLTML7oVATwMH8d7) 😃 
