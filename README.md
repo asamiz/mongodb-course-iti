@@ -13,6 +13,10 @@ All assignments will be sent to this mail:
 
 [iti.mongodb@gmail.com](mailto:iti.mongodb@gmail.com)
 
+## 👏 Honorable Mention
+
+I want to highlight the efforts that are done by the awesome people on [**GoalKicker**](https://books.goalkicker.com/). You can find the copy of their book on the first day branch also check out their other books on their site!
+
 ## ✔️ Feedback is always appreciable
 
 > “Feedback is the breakfast of champions.” – Ken Blanchard
