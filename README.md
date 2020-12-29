@@ -17,7 +17,7 @@ All assignments will be sent to this mail:
 
 I want to highlight the efforts that are done by the awesome people on [**GoalKicker**](https://books.goalkicker.com/). You can find the copy of their book on the first day branch also check out their other books on their site!
 
-Also, a HUGE thanks to @bstashchuk and his very useful channel which I highly recommend to anyone wants to learn more about MongoDB and many other topics, check out his channel from this link [**Bogdan Stashchuk**](https://www.youtube.com/c/CodingTutorials)!
+Also, a HUGE thanks to [**@bstashchuk**](https://github.com/bstashchuk) and his very useful channel which I highly recommend to anyone wants to learn more about MongoDB and many other topics, check out his channel from this link [**Bogdan Stashchuk**](https://www.youtube.com/c/CodingTutorials)!
 
 ## ✔️ Feedback is always appreciable
 
