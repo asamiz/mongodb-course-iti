@@ -13,6 +13,12 @@ All assignments will be sent to this mail:
 
 [iti.mongodb@gmail.com](mailto:iti.mongodb@gmail.com)
 
+---
+
+**IMPORTANT:** Email subject should be in this format:
+
+'YOUR_NAME' | 'YOUR_TRACK' | 'YOUR_BRANCH(INTAKE_NUMBER)'
+
 ## 👏 Honorable Mentions
 
 I want to highlight the efforts that are done by the awesome people on [**GoalKicker**](https://books.goalkicker.com/). You can find the copy of their book on the first day branch also check out their other books on their site!
