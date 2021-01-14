@@ -31,7 +31,7 @@ db.students.updateOne({name:'Ahmed'}, {$set:{phone: 33445686}})
 // Ex: Update Nada's document to add grade array of [35,45,55,75]
 db.students.updateOne({name: 'Nada'}, {$set:{grade: [35,45,55,75]})
 
-// Ex: Update Nabil document (upserted)
+// Ex: Update Nabil's document (upserted)
 db.students.updateOne({name:'Nabil'}, {$set: {name:'Nabil', email:'Nabil@nabil.com', phone: '9038543'}}, {upsert:true})
 
 // Ex: Update All documents to add another attribute called class and its value 'A'
@@ -66,7 +66,7 @@ db.cities.find({})
 // Ex: Find all cities with prettier format
 db.cities.find({}).pretty()
 
-// Ex: Find all cities and return only city and pop properties
+// Ex: Find all cities and return only city and pop properties // projection
 db.cities.find({}, {city: 1, pop: 1})
 
 // Ex: Find all cities and return only city and pop properties without _id
@@ -105,9 +105,12 @@ db.cities.updateMany({pop:{$lt: 300}, nationalities: 'English'}, {$set:{'nationa
 // Ex: Pull the value of 42.062734 from loc array in 'WALES' city document
 db.cities.updateOne({ city: "WALES" }, { $pull: { loc: 42.062734 } })
 
+// Ex: Pop the first value of loc array in 'WALES' city document
+db.cities.updateOne({ city: "WALES" }, { $pop: { loc: -1 } })
+
 // ---------------------------------------------------------------------------------------------
 
-// Limit, Skip, and Count
+// Limit, Skip, sort, and Count
 
 // Ex: Count all the cities in 'ME' state
 db.cities.find({state: {$eq:'RI'}}).count()
