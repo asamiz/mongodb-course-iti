@@ -1,15 +1,16 @@
 // Lecture Commands:
 
 // basic
-1 - show dbs
-2 - use demo 
-3 - db
-4 - show collections
-5 - use iti
-6 - show dbs
-7 - db.createCollection('students')
-8 - show dbs
-9 - show collections
+ show dbs
+ use demo 
+ db
+ show collections
+ use iti
+ show dbs
+ db.createCollection('students')
+ show dbs
+ use iti
+ show collections
 
 // insertion
 //Ex: Insert one document in students collection.
