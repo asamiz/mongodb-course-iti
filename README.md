@@ -19,6 +19,12 @@ All assignments will be sent to this mail:
 
 'YOUR_NAME' | 'YOUR_TRACK' | 'YOUR_BRANCH(INTAKE_NUMBER)'
 
+## Course Project
+
+Please make sure that you reserve your spot in the course project sheet by using the following link to enter your name, track, and the technology you are gonna use:
+
+[Course Project Sheet](https://docs.google.com/spreadsheets/d/1r5nbCOWAMUo_fniX98NiIG81jsy5gIisoob1XbtBdDo/edit?usp=sharing)
+
 ## 👏 Honorable Mentions
 
 I want to highlight the efforts that are done by the awesome people on [**GoalKicker**](https://books.goalkicker.com/). You can find the copy of their book on the first day branch also check out their other books on their site!
