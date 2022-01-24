@@ -1,6 +1,6 @@
-## 🔥 MongoDB Course Days Used Commands
+## 🔥 MongoDB Course Content
 
-Thank you so much for passing by, this repo related to ITI MongoDB course to keep track of every commands we will use throughout the 2 days of the course 😊.
+Thank you so much for passing by, this repo related to ITI MongoDB course to keep track of every progress we will do throughout the 2 days of the course 😊.
 
 ## 👁️ How can I see each day content?
 
@@ -18,6 +18,12 @@ All assignments will be sent to this mail:
 **IMPORTANT:** Email subject should be in this format:
 
 'YOUR_NAME' | 'YOUR_TRACK' | 'YOUR_BRANCH(INTAKE_NUMBER)'
+
+## Course Project
+
+Please make sure that you reserve your spot in the course project sheet by using the following link to enter your name, track, and the technology you are gonna use:
+
+[Course Project Sheet](https://docs.google.com/spreadsheets/d/1r5nbCOWAMUo_fniX98NiIG81jsy5gIisoob1XbtBdDo/edit?usp=sharing)
 
 ## 👏 Honorable Mentions
 
