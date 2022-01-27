@@ -63,6 +63,9 @@ use demo
 // Ex: Find all cities
 db.cities.find({})
 
+// Ex: Find all cities (prevent using cursor)
+db.cities,find({}).toArray()
+
 // Ex: Find all cities with prettier format
 db.cities.find({}).pretty()
 
@@ -99,8 +102,11 @@ db.cities.find({$and:[{state:{$eq: 'RI'}},{pop:{$gt: 500}}]})
 // Ex: Update all likes count for all countries except for the countries in states 'RI' and 'ME' to be 2000
 db.cities.updateMany({state:{$nin:['RI', 'ME']}}, {$set:{'rates.liked':2000}})
 
-// Ex: Update English nationality in nationalities array for all cities that has pop less than 300 to be German
-db.cities.updateMany({pop:{$lt: 300}, nationalities: 'English'}, {$set:{'nationalities.$': 'German'}})
+// Ex: Update American nationality in nationalities array for all cities that has pop less than 300 to be German
+db.cities.updateMany({pop:{$lt: 300}, nationalities: 'American'}, {$set:{'nationalities.$': 'German'}})
+
+// Ex: Update second nationality in nationalities array for all cities that has pop greater than 300 to be Egyptian
+db.cities.updateMany({pop:{$gt: 300}}, {$set:{'nationalities.0': 'Egyptian'}})
 
 // Ex: Pull the value of 42.062734 from loc array in 'WALES' city document
 db.cities.updateOne({ city: "WALES" }, { $pull: { loc: 42.062734 } })
