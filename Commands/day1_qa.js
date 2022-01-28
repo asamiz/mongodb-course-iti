@@ -60,65 +60,65 @@ db.dropDatabase()
 // Read
 use demo
 
-// Ex: Find all cities
-db.cities.find({})
+// Ex: Find all states
+db.states.find({})
 
-// Ex: Find all cities (prevent using cursor)
-db.cities,find({}).toArray()
+// Ex: Find all states (prevent using cursor)
+db.states,find({}).toArray()
 
-// Ex: Find all cities with prettier format
-db.cities.find({}).pretty()
+// Ex: Find all states with prettier format
+db.states.find({}).pretty()
 
-// Ex: Find all cities and return only city and pop properties // projection
-db.cities.find({}, {city: 1, pop: 1})
+// Ex: Find all states and return only city and pop properties // projection
+db.states.find({}, {city: 1, pop: 1})
 
-// Ex: Find all cities and return only city and pop properties without _id
-db.cities.find({}, {_id:0,city: 1, pop: 1})
+// Ex: Find all states and return only city and pop properties without _id
+db.states.find({}, {_id:0,city: 1, pop: 1})
 
 // Ex: Find the document of 'WALES' city
-db.cities.findOne({city:'WALES'})
+db.states.findOne({city:'WALES'})
 
 
 // ---------------------------------------------------------------------------------------------
 
 // Operators
 
-// Ex: Find all the cities that have pop lt 500
-db.cities.find({pop:{$lt: 500}})
+// Ex: Find all the states that have pop less than 500
+db.states.find({pop:{$lt: 500}})
 
-// Ex: Find all cities that are in 'MA' state
-db.cities.find({state:{$eq: 'MA'}})
+// Ex: Find all 'MA' states
+db.states.find({state:{$eq: 'MA'}})
 
-// Ex: Find all cities that are not in 'MA' or 'RI' states
-db.cities.find({state: {$nin: ['MA', 'RI']}})
+// Ex: Find all states that are not 'MA' or 'RI' states
+db.states.find({state: {$nin: ['MA', 'RI']}})
 
-// Ex: Find all cities that are in 'RI' state and has pop gt 500
-db.cities.find({$and:[{state:{$eq: 'RI'}},{pop:{$gt: 500}}]})
+// Ex: Find all 'RI' state with pop greater than 500
+db.states.find({$and:[{state:{$eq: 'RI'}},{pop:{$gt: 500}}]})
 
 // ---------------------------------------------------------------------------------------------
 
 // Embedded Documents and Arrays
 
-// Ex: Update all likes count for all countries except for the countries in states 'RI' and 'ME' to be 2000
-db.cities.updateMany({state:{$nin:['RI', 'ME']}}, {$set:{'rates.liked':2000}})
+// Ex: Update all likes count for all states except for states 'RI' and 'ME' to be 2000
+db.states.updateMany({state:{$nin:['RI', 'ME']}}, {$set:{'rates.liked':2000}})
 
-// Ex: Update American nationality in nationalities array for all cities that has pop less than 300 to be German
-db.cities.updateMany({pop:{$lt: 300}, nationalities: 'American'}, {$set:{'nationalities.$': 'German'}})
+// Ex: Update American nationality in nationalities array for all states that has pop less than 300 to be German
+db.states.updateMany({pop:{$lt: 300}, nationalities: 'American'}, {$set:{'nationalities.$': 'German'}})
 
-// Ex: Update second nationality in nationalities array for all cities that has pop greater than 300 to be Egyptian
-db.cities.updateMany({pop:{$gt: 300}}, {$set:{'nationalities.0': 'Egyptian'}})
+// Ex: Update second nationality in nationalities array for all states that has pop greater than 300 to be Egyptian
+db.states.updateMany({pop:{$gt: 300}}, {$set:{'nationalities.1': 'Egyptian'}})
 
 // Ex: Pull the value of 42.062734 from loc array in 'WALES' city document
-db.cities.updateOne({ city: "WALES" }, { $pull: { loc: 42.062734 } })
+db.states.updateOne({ city: "WALES" }, { $pull: { loc: 42.062734 } })
 
 // Ex: Pop the first value of loc array in 'WALES' city document
-db.cities.updateOne({ city: "WALES" }, { $pop: { loc: -1 } })
+db.states.updateOne({ city: "WALES" }, { $pop: { loc: -1 } })
 
 // ---------------------------------------------------------------------------------------------
 
 // Limit, Skip, sort, and Count
 
-// Ex: Count all the cities in 'ME' state
-db.cities.find({state: {$eq:'RI'}}).count()
+// Ex: Count all 'ME' states
+db.states.find({state: {$eq:'RI'}}).count()
 
 
