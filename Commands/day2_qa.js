@@ -67,17 +67,17 @@ db.persons.aggregate([
 ]);
 
 // Ex: Group all male persons and get the number of persons in each age.
-db.persons.aggregate([{ $group: { _id: "$age", personsAge: { $sum: 1 } } }]);
+db.persons.aggregate([
+  { $match: { gender: "male" } },
+  {
+    $group: { _id: "$age", personsAge: { $sum: 1 } },
+  },
+]);
 
 // Ex: Group all active female persons by eye color and find their average age
 db.persons.aggregate([
   { $match: { $and: [{ isActive: true }, { gender: "female" }] } },
   { $group: { _id: "$eyeColor", avgAge: { $avg: "$age" } } },
-]);
-
-// Ex: Group all the persons by tag name 'ad' and find the min age
-db.persons.aggregate([
-  { $group: { _id: { tags: ["ad"] }, minAge: { $min: "$age" } } },
 ]);
 
 // Ex: Group all active male persons by their favoriteFruit and get the max age
@@ -88,20 +88,23 @@ db.persons.aggregate([
 
 // Indexes:
 
-// Ex: Create new Index on the index field on persons document
+// Ex: Find all the indexes in the person collection
+db.persons.getIndexes();
+
+// Ex: Create new Index on the index field on persons collection
 db.persons.createIndex({ index: 1 });
 
 // Ex: Find all the persons that has an age less than 25 years and use explain method to see query info (WITHOUT MAKING AN INDEX ON AGE FIELD)
-db.persons.explain("executionStats").find({ age: { $lt: 25 } });
+db.persons.find({ age: { $lt: 25 } }).explain("executionStats");
 
-// Ex: Create new index on the age field on persons document, make it in the background, unique and name it as ageIndex
+// Ex: Create new index on the age field on persons collection, make it in the background, unique and name it as ageIndex
 db.persons.createIndex(
   { age: 1 },
   { background: true, name: "ageIndex", unique: true }
 );
 
 // Ex: Find all the persons that has an age less than 25 years and use explain method to see query info (WITH MAKING AN INDEX ON AGE FIELD)
-db.persons.explain("executionStats").find({ age: { $lt: 25 } });
+db.persons.find({ age: { $lt: 25 } }).explain("executionStats");
 
 // Ex: Drop the index on the age field
 db.persons.dropIndex({ age: 1 });
